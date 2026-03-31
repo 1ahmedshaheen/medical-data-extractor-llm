@@ -42,7 +42,7 @@ Raw Text → LLM → JSON Extraction → Validation → DataFrame → CSV Output
 
 ### 1. Install Dependencies
 ```bash
-pip install pandas openai tqdm
+pip install streamlit pandas openai tqdm
 API_KEY = "your_api_key"
 ```
 ---
@@ -63,10 +63,10 @@ Patient is a 45-year-old male complaining of back pain. Recommended treatment in
 ---
 
 ## 🛡️ Robustness Features
-✅ JSON validation for  consistency
-✅ Error handling to API failures
-✅ Logging 
-✅ Scalable batch processing
+- ✅ JSON validation for  consistency
+- ✅ Error handling to API failures
+- ✅ Logging 
+- ✅ Scalable batch processing
 
 ---
 
