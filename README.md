@@ -1,40 +1,66 @@
-# 🏥 Medical Data Extraction using LLMs
+# 🏥 AI Medical Data Extraction System
+
+<p align="center">
+  <img src="/images/electronic_medical_records.png" width="800"/>
+</p>
+
+---
 
 ## 🚀 Overview
-This project leverages Large Language Models (LLMs) to transform unstructured medical transcripts into structured, machine-readable data.
+An AI-powered system that transforms unstructured medical transcripts into structured, machine-readable data using Large Language Models (LLMs).
 
-It extracts key clinical insights such as patient age and recommended treatment using advanced prompt engineering.
+This project goes beyond simple extraction — it delivers an **interactive AI web application** with real-time processing and analytics.
 
 ---
 
 ## 🎯 Problem Statement
-Medical data is often stored as unstructured text, making it difficult to analyze, query, or integrate into systems.
-
-This project solves that by converting raw clinical text into structured JSON data.
+Medical data is often buried inside unstructured clinical text, making it:
+- Hard to analyze 📉
+- Difficult to query 🔍
+- Impossible to scale 🚫
 
 ---
 
-## 🧠 Solution
-We use an LLM-powered pipeline to:
-1. Read medical transcripts from a CSV file
-2. Send each record to an AI model
-3. Extract structured fields
-4. Validate and store results
+## 💡 Solution
+We built an intelligent pipeline that:
+
+1. Reads raw medical transcripts  
+2. Uses AI to extract key information  
+3. Converts text → structured JSON  
+4. Performs validation  
+5. Generates analytics & insights  
+
+---
+
+## 🧠 Key Features
+- 🤖 LLM-powered data extraction
+- 🧪 Demo Mode (no API required)
+- 📊 Data analysis & visualization
+- 🌐 Interactive Streamlit web app
+- ⚡ Real-time processing
+- 🔒 Error handling & validation
 
 ---
 
 ## ⚙️ Tech Stack
 - Python
 - Pandas
-- OpenAI API (LLMs)
-- JSON Processing
-- Logging & Error Handling
+- Streamlit
+- OpenAI API (optional)
+- Matplotlib
 
 ---
 
 ## 🔄 Pipeline Workflow
 Raw Text → LLM → JSON Extraction → Validation → DataFrame → CSV Output
 
+---
+
+## 🎨 User Interface
+
+| Upload Data | Process | Analyze |
+|------------|--------|--------|
+| CSV Upload 📂 | AI Extraction 🤖 | Charts 📊 |
 
 ---
 
@@ -42,9 +68,11 @@ Raw Text → LLM → JSON Extraction → Validation → DataFrame → CSV Output
 
 ### 1. Install Dependencies
 ```bash
-pip install streamlit pandas openai tqdm
-API_KEY = "your_api_key"
+pip install -r requirements.txt
 ```
+### 2. Run The App
+```bash
+streamlit run app.py```
 ---
 
 ## 📊 Example Input
@@ -65,7 +93,7 @@ Patient is a 45-year-old male complaining of back pain. Recommended treatment in
 ## 🛡️ Robustness Features
 - ✅ JSON validation for  consistency
 - ✅ Error handling to API failures
-- ✅ Logging 
+- ✅ Logging system
 - ✅ Scalable batch processing
 
 ---
@@ -78,6 +106,12 @@ Patient is a 45-year-old male complaining of back pain. Recommended treatment in
 
 ---
 
+## 👨‍💻 Author
+### Ahmed Shaheen
+#### AI Engineer | Data Scientist | Computer Vision Enthusiast
+
+---
+
 ## ⚠️ Note About API Usage
 
 This project includes a **Demo Mode** that works without an API key.
@@ -86,4 +120,5 @@ This project includes a **Demo Mode** that works without an API key.
 - To enable real AI extraction, set:
 
 ```python
-USE_API = True
+USE_API = True```
+
