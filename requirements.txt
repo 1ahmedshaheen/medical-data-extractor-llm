@@ -1,4 +1,5 @@
 pandas
+matplotlib
 openai
 tqdm
 streamlit

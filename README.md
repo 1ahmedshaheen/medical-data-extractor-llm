@@ -120,5 +120,5 @@ This project includes a **Demo Mode** that works without an API key.
 - To enable real AI extraction, set:
 
 ```python
-USE_API = True```
+USE_API = True
 
