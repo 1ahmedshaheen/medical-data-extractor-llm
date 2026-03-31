@@ -72,7 +72,8 @@ pip install -r requirements.txt
 ```
 ### 2. Run The App
 ```bash
-streamlit run app.py```
+streamlit run app.py
+```
 ---
 
 ## 📊 Example Input
@@ -122,3 +123,4 @@ This project includes a **Demo Mode** that works without an API key.
 ```python
 USE_API = True
 
+```
